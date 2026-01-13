@@ -1,38 +1,21 @@
-# sv
+<div align="center">
+  <img src="src/lib/assets/ispub.png" alt="ispub logo" width="200" />
+  <h1>ispub</h1>
+</div>
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+## About
 
-## Creating a project
+**ispub** is a fast, simple web tool that helps developers check package name availability on the NPM registry before publishing. Avoid naming conflicts and find the perfect package name for your project.
 
-If you're seeing this, you've probably already done this step. Congrats!
+**Live Results** – Immediate feedback on package availability
 
-```sh
-# create a new project in the current directory
-npx sv create
+## Tech Stack
 
-# create a new project in my-app
-npx sv create my-app
-```
+- **Framework:** [SvelteKit 2](https://kit.svelte.dev/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Language:** TypeScript
+- **Package Manager:** pnpm
 
-## Developing
+## License
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+MIT
