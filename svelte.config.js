@@ -11,7 +11,9 @@ const config = {
 		experimental: {
 			remoteFunctions: true
 		},
-		adapter: adapter()
+		adapter: adapter({
+			runtime: 'nodejs24.x'
+		})
 	},
 
 	compilerOptions: {

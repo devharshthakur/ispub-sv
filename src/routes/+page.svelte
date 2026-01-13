@@ -22,7 +22,7 @@
 </script>
 
 <main class="flex min-h-screen items-center justify-center bg-white">
-	<div class="mx-auto max-w-2xl px-6 py-16 text-center">
+	<div class="mx-auto max-w-2xl px-6 text-center">
 		<header class="space-y-3">
 			<h1 class="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Check npm package availability</h1>
 			<p class="text-base text-gray-600">Type a package name and jump straight to the result.</p>
