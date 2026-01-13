@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
+	import { resolve } from '$app/paths';
 	import { Search } from '@lucide/svelte';
 
 	let searchQuery: string = $state('');
@@ -8,7 +9,7 @@
 	async function handleSearch() {
 		if (!searchQuery.trim()) return;
 		isSearching = true;
-		await goto(`/search/${encodeURIComponent(searchQuery)}`);
+		await goto(resolve(`/search/${encodeURIComponent(searchQuery)}`));
 		isSearching = false;
 	}
 
@@ -49,10 +50,6 @@
 					<Search size={18} />
 				</button>
 			</div>
-
-			{#if isSearching}
-				<p class="mt-3 text-sm text-gray-500">Searching…</p>
-			{/if}
 		</section>
 	</div>
 </main>
