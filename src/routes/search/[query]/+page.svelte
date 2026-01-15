@@ -14,7 +14,7 @@
 	<div class="mx-auto w-full max-w-2xl px-6 py-12">
 		{#await searchResult}
 			<section class="flex flex-col items-center justify-center space-y-4">
-				<LoadingSpinner size="16" />
+				<LoadingSpinner size="6" />
 				<p class="text-sm text-gray-500">Checking registry…</p>
 			</section>
 		{:then result}
