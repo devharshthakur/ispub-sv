@@ -11,6 +11,9 @@ const config = {
 		experimental: {
 			remoteFunctions: true
 		},
+		alias: {
+			'@/*': './path/to/lib/*'
+		},
 		adapter: adapter({
 			runtime: 'nodejs24.x'
 		})
