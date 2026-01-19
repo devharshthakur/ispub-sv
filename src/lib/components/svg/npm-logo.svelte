@@ -1,4 +1,5 @@
-<svg class="h-7 w-7" viewBox="0 0 780 780" aria-hidden="true">
-	<rect width="780" height="780" rx="120" fill="#cb3837" />
-	<path fill="#fff" d="M170 230h440v320H400V330H330v220H170V230Zm250 100v140h50V330h-50Zm90 0v140h50V330h-50Z" />
-</svg>
+<script lang="ts"></script>
+
+<svg viewBox="0 0 2500 2500"
+	><path fill="#c00" d="M0 0h2500v2500H0z" /><path fill="#fff" d="M1241.5 268.5h-973v1962.9h972.9V763.5h495v1467.9h495V268.5z" /></svg
+>
