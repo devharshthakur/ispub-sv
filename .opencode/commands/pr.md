@@ -1,7 +1,6 @@
 ---
 description: Create pull request from current branch to main
 agent: build
-model: anthropic/claude-3-5-sonnet-20241022
 ---
 
 Please help me create a pull request from the current branch to main.
