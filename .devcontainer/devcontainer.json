@@ -1,0 +1,27 @@
+{
+	"name": "ispub-sv",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"workspaceFolder": "/workspace",
+	"postCreateCommand": "pnpm install",
+	"forwardPorts": [5173, 4173],
+	"portsAttributes": {
+		"5173": {
+			"label": "Vite dev server",
+			"onAutoForward": "openPreview"
+		},
+		"4173": {
+			"label": "Vite preview"
+		}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": ["svelte.svelte-vscode", "dbaeumer.vscode-eslint", "esbenp.prettier-vscode", "bradlc.vscode-tailwindcss"],
+			"settings": {
+				"editor.formatOnSave": true,
+				"eslint.useFlatConfig": true
+			}
+		}
+	}
+}
