@@ -14,7 +14,10 @@
 		"format": "prettier --write .",
 		"lint": "prettier --check . && eslint .",
 		"precommit": "pnpm format && eslint . --fix",
-		"lint-staged": "lint-staged"
+		"lint-staged": "lint-staged",
+		"start:docker": "docker compose up --build",
+		"stop:docker": "docker compose down",
+		"clean:docker": "docker compose down --rmi all --volumes --remove-orphans"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^2.1.0",
