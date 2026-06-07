@@ -5,10 +5,11 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
+		"start": "rm -rf .svelte-kit && vite build && vite preview --port 5173",
 		"build": "vite build",
-		"preview": "vite preview",
+		"preview": "vite preview --port 5173",
 		"prepare": "husky",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json && eslint .",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"format": "prettier --write .",
 		"lint": "prettier --check . && eslint .",
@@ -49,7 +50,7 @@
 	},
 	"dependencies": {
 		"mode-watcher": "^1.1.0",
-		"valibot": "^1.4.1"
+		"zod": "^4.4.3"
 	},
 	"lint-staged": {
 		"*.{js,cjs,mjs,ts,cts,mts,jsx,tsx,svelte}": [

@@ -1,12 +1,12 @@
 import { query } from '$app/server';
-import * as v from 'valibot';
+import { z } from 'zod';
 
 export type SearchResult = {
 	isAvailable: boolean;
 	nodeUrl: string | null;
 };
 
-export const searchPackage = query(v.string(), async (packageName: string): Promise<SearchResult> => {
+export const searchPackage = query(z.string(), async (packageName: string): Promise<SearchResult> => {
 	try {
 		const apiUrl = `https://registry.npmjs.org/${packageName}`;
 		const response = await fetch(apiUrl, {
@@ -29,6 +29,6 @@ export const searchPackage = query(v.string(), async (packageName: string): Prom
 		}
 	} catch (error) {
 		console.error('Api request error:', error);
-		throw new Error('Failed to fetch search results');
+		throw new Error('Failed to fetch search results', { cause: error });
 	}
 });
