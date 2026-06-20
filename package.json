@@ -11,7 +11,7 @@
 		"prepare": "husky",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json && eslint .",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"format": "prettier --write .",
+		"format": "prettier --write --experimental-cli .",
 		"lint": "prettier --check . && eslint .",
 		"precommit": "pnpm format && eslint . --fix",
 		"lint-staged": "lint-staged",

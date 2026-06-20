@@ -20,8 +20,12 @@
 
 <main class="mx-auto flex min-h-screen w-full max-w-4xl flex-col items-center pt-72 px-4 text-center">
 	<header class="space-y-4">
-		<div class="mx-auto flex w-fit items-center gap-3 rounded-sm border border-neutral-200 bg-white px-3 py-2 text-sm text-neutral-600 shadow-sm dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-300">
-			<div class="flex h-7 w-7 items-center justify-center rounded-full bg-white shadow-sm ring-1 ring-neutral-200 dark:bg-neutral-900 dark:ring-neutral-700">
+		<div
+			class="mx-auto flex w-fit items-center gap-3 rounded-sm border border-neutral-200 bg-white px-3 py-2 text-sm text-neutral-600 shadow-sm dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-300"
+		>
+			<div
+				class="flex h-7 w-7 items-center justify-center rounded-full bg-white shadow-sm ring-1 ring-neutral-200 dark:bg-neutral-900 dark:ring-neutral-700"
+			>
 				<SVGIcon src={npmSvg} />
 			</div>
 			<span class="text-xs font-semibold tracking-wide uppercase">registry</span>
@@ -42,7 +46,13 @@
 				}}
 				class="bg-white text-neutral-900 py-5 px-6 dark:bg-neutral-900 dark:text-neutral-100"
 			/>
-			<Button onclick={handleSearch} disabled={isSearching || !searchQuery.trim()} class="rounded-md py-5 px-5 border-neutral-200 bg-neutral-100 text-neutral-700 shadow-sm hover:bg-neutral-200 disabled:opacity-60 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-200 dark:hover:bg-neutral-800" aria-label="Search" size="icon">
+			<Button
+				onclick={handleSearch}
+				disabled={isSearching || !searchQuery.trim()}
+				class="rounded-md py-5 px-5 border-neutral-200 bg-neutral-100 text-neutral-700 shadow-sm hover:bg-neutral-200 disabled:opacity-60 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-200 dark:hover:bg-neutral-800"
+				aria-label="Search"
+				size="icon"
+			>
 				<Search size={24} />
 			</Button>
 		</div>

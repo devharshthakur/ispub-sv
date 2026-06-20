@@ -9,25 +9,25 @@ const config = {
 
 	kit: {
 		experimental: {
-			remoteFunctions: true
+			remoteFunctions: true,
 		},
 		alias: {
-			'@/*': './path/to/lib/*'
+			'@/*': './path/to/lib/*',
 		},
 		adapter: adapter({
-			runtime: 'nodejs24.x'
-		})
+			runtime: 'nodejs24.x',
+		}),
 	},
 
 	compilerOptions: {
 		experimental: {
-			async: true
-		}
+			async: true,
+		},
 	},
 
 	vitePlugin: {
-		inspector: true
-	}
+		inspector: true,
+	},
 };
 
 export default config;

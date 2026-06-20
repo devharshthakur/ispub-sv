@@ -12,19 +12,19 @@ export const searchPackage = query(z.string(), async (packageName: string): Prom
 		const response = await fetch(apiUrl, {
 			method: 'GET',
 			headers: {
-				'Content-Type': 'application/json'
-			}
+				'Content-Type': 'application/json',
+			},
 		});
 
 		if (!response.ok) {
 			return {
 				isAvailable: false,
-				nodeUrl: null
+				nodeUrl: null,
 			};
 		} else {
 			return {
 				isAvailable: true,
-				nodeUrl: `https://www.npmjs.com/package/${packageName}`
+				nodeUrl: `https://www.npmjs.com/package/${packageName}`,
 			};
 		}
 	} catch (error) {

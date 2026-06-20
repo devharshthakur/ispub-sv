@@ -29,11 +29,22 @@
 </script>
 
 {#if title}
-	<span role="img" aria-label={title} class={`svg-icon ${className}`} style={size ? `--svg-icon-size:${size}px` : ''} {...restProps}>
+	<span
+		role="img"
+		aria-label={title}
+		class={`svg-icon ${className}`}
+		style={size ? `--svg-icon-size:${size}px` : ''}
+		{...restProps}
+	>
 		{@html processedSrc}
 	</span>
 {:else}
-	<span aria-hidden="true" class={`svg-icon ${className}`} style={size ? `--svg-icon-size:${size}px` : ''} {...restProps}>
+	<span
+		aria-hidden="true"
+		class={`svg-icon ${className}`}
+		style={size ? `--svg-icon-size:${size}px` : ''}
+		{...restProps}
+	>
 		{@html processedSrc}
 	</span>
 {/if}
