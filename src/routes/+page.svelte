@@ -4,6 +4,8 @@
 	import { Search, CircleCheckBig, CircleX, Copy, ExternalLink } from '@lucide/svelte';
 	import type { SearchResult } from './search.remote';
 	import { searchPackage } from './search.remote';
+	import { cn } from '$lib/utils.js';
+	import { badgeVariants } from '$lib/components/ui/badge/index.js';
 	import Input from '$lib/components/ui/input/input.svelte';
 	import Button from '$lib/components/ui/button/button.svelte';
 
@@ -61,16 +63,17 @@
 				bind:value={query}
 				placeholder="package name"
 				onkeydown={handleKeydown}
-				class="h-14 rounded-2xl bg-background pl-12 pr-16 text-lg shadow-sm transition-shadow focus-within:shadow-md"
+				class="h-14 rounded-2xl bg-background pl-12 pr-24 text-lg shadow-sm transition-shadow focus-within:shadow-md"
 			/>
 			<Button
 				onclick={() => doSearch(query)}
 				disabled={!canSearch}
-				size="icon"
-				class="absolute right-2 top-1/2 size-10 -translate-y-1/2 rounded-xl"
-				aria-label="Search"
+				size="lg"
+				variant="default"
+				type="submit"
+				class="absolute right-2 top-1/2 h-10 -translate-y-1/2 rounded-xl px-4"
 			>
-				<Search class="size-5" />
+				Search
 			</Button>
 		</div>
 
@@ -79,8 +82,12 @@
 				<span class="text-xs text-muted-foreground/50">Try</span>
 				{#each SUGGESTIONS as name (name)}
 					<button
+						type="button"
 						onclick={() => doSearch(name)}
-						class="rounded-full border border-border bg-background px-3.5 py-1.5 text-xs font-medium text-muted-foreground transition hover:border-foreground/20 hover:text-foreground"
+						class={cn(
+							badgeVariants({ variant: 'outline' }),
+							'cursor-pointer px-3.5 py-1.5 text-xs transition-colors hover:bg-muted',
+						)}
 					>
 						{name}
 					</button>
