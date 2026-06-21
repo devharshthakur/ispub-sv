@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>%sveltekit.status% — ispub</title>
+		<style>
+			*,
+			*::before,
+			*::after {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			html {
+				font-size: 16px;
+			}
+			body {
+				min-height: 100vh;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				padding: 2rem 1rem;
+				background: #121212;
+				color: #e0e0e0;
+				font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas,
+					'DejaVu Sans Mono', monospace;
+				text-align: center;
+			}
+			.status {
+				font-size: 5rem;
+				font-weight: 700;
+				letter-spacing: -0.05em;
+				color: #ef4444;
+			}
+			.title {
+				margin-top: 0.75rem;
+				font-size: 1.125rem;
+				font-weight: 600;
+			}
+			.message {
+				margin-top: 0.5rem;
+				max-width: 24rem;
+				font-size: 0.875rem;
+				color: #9ca3af;
+				line-height: 1.6;
+			}
+			.link {
+				display: inline-block;
+				margin-top: 2rem;
+				padding: 0.625rem 1.5rem;
+				border: 1px solid #374151;
+				border-radius: 0.75rem;
+				background: #1e1e1e;
+				color: #e0e0e0;
+				font-size: 0.875rem;
+				font-weight: 500;
+				text-decoration: none;
+				transition: background 0.15s, border-color 0.15s;
+			}
+			.link:hover {
+				background: #2a2a2a;
+				border-color: #4b5563;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="status">%sveltekit.status%</div>
+		<div class="title">Something went wrong</div>
+		<p class="message">%sveltekit.error.message%</p>
+		<a class="link" href="/">Go home</a>
+	</body>
+</html>

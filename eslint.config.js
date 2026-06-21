@@ -39,4 +39,10 @@ export default defineConfig(
 			},
 		},
 	},
+	{
+		files: ['**/+error.svelte'],
+		rules: {
+			'svelte/valid-prop-names-in-kit-pages': 'off',
+		},
+	},
 );
