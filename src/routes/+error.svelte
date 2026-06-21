@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
 	import { page } from '$app/state';
-	import { TriangleAlert } from '@lucide/svelte';
+	import TriangleAlert from '@lucide/svelte/icons/triangle-alert';
 
 	let is404 = $derived(page.status === 404);
 </script>
