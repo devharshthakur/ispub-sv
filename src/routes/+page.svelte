@@ -1,7 +1,11 @@
 <script lang="ts">
 	/* eslint-disable svelte/no-navigation-without-resolve */
 	import { fly } from 'svelte/transition';
-	import { Search, CircleCheckBig, CircleX, Copy, ExternalLink } from '@lucide/svelte';
+	import Search from '@lucide/svelte/icons/search';
+	import CircleCheckBig from '@lucide/svelte/icons/circle-check-big';
+	import CircleX from '@lucide/svelte/icons/circle-x';
+	import Copy from '@lucide/svelte/icons/copy';
+	import ExternalLink from '@lucide/svelte/icons/external-link';
 	import type { SearchResult } from './search.remote';
 	import { searchPackage } from './search.remote';
 	import { cn } from '$lib/utils.js';
