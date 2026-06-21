@@ -10,6 +10,7 @@ const config = {
 	kit: {
 		experimental: {
 			remoteFunctions: true,
+			handleRenderingErrors: true,
 		},
 		alias: {
 			'@/*': './path/to/lib/*',
