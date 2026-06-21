@@ -7,7 +7,10 @@
 	let { children } = $props();
 </script>
 
-<svelte:head><link rel="icon" href={favicon} /></svelte:head>
+<svelte:head>
+	<link rel="icon" href={favicon} />
+	<link rel="preload" href="/fonts/GeistMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+</svelte:head>
 <main>
 	<ModeWatcher />
 	<div class="fixed top-3 right-5">
