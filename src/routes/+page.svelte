@@ -56,7 +56,7 @@
 		<h1 class="text-4xl font-bold tracking-tight sm:text-5xl">ispub</h1>
 		<p class="mt-3 text-base text-muted-foreground sm:text-lg">Check if an npm package name is available</p>
 
-		<div class="relative mt-10 w-full">
+		<div class="relative mt-4 w-full">
 			<Search class="pointer-events-none absolute left-4 top-1/2 size-5 -translate-y-1/2 text-muted-foreground" />
 			<Input
 				type="text"
