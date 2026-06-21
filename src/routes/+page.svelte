@@ -2,8 +2,8 @@
 	/* eslint-disable svelte/no-navigation-without-resolve */
 	import { fly } from 'svelte/transition';
 	import { Search, CircleCheckBig, CircleX, Copy, ExternalLink } from '@lucide/svelte';
-	import type { SearchResult } from './search/search.remote';
-	import { searchPackage } from './search/search.remote';
+	import type { SearchResult } from './search.remote';
+	import { searchPackage } from './search.remote';
 	import Input from '$lib/components/ui/input/input.svelte';
 	import Button from '$lib/components/ui/button/button.svelte';
 
