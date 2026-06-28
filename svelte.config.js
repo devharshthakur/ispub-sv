@@ -14,6 +14,7 @@ const config = {
 		},
 		alias: {
 			'@/*': './path/to/lib/*',
+			$routes: './src/routes',
 		},
 		adapter: adapter({
 			runtime: 'nodejs24.x',
