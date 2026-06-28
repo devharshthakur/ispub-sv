@@ -6,7 +6,6 @@
 	"biome.enabled": false,
 	"js/ts.tsdk.path": "node_modules/typescript/lib",
 	"material-icon-theme.folders.associations": {
-		"components": "svelte",
-		".opencode": "zed"
+		"components": "svelte"
 	}
 }
